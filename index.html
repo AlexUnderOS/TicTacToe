@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESU spēle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>DESU spēle</h1>
+    <p>Spēlētāja <span class="display">X</span> gājiens</p>
+    <div class="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+    <button class="reset-btn"  onclick="sakt_speli()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+    <div class="result" id="resultBox">
+        <div class="resultInfo"></div>
+        <div class="score" id="scoreText"></div>
+        <button id="restartButton">Spēlēt vēlreiz</button>
+        <button onclick="reset_score()">Reset All Game Data</button>
+        <button class="close-btn" onclick="rezultatu_logs.classList.remove('show')">X</button>
+    </div>
+</body>
+</html>
